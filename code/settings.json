@@ -1,6 +1,9 @@
 {
 	//#region languages and formatting
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[elixir]": {
+		"editor.defaultFormatter": "JakeBecker.elixir-ls"
+	},
 	"[html]": {
 		"editor.defaultFormatter": "vscode.html-language-features"
 	},
@@ -32,10 +35,10 @@
 	//#region vscode natives
 	"diffEditor.codeLens": true,
 	"diffEditor.experimental.showMoves": true,
-	"diffEditor.ignoreTrimWhitespace": false,
+	"diffEditor.ignoreTrimWhitespace": true,
+	"editor.acceptSuggestionOnEnter": "smart",
 	"editor.accessibilitySupport": "off",
-	"editor.autoClosingBrackets": "always",
-	"editor.autoClosingQuotes": "always",
+	"editor.autoIndentOnPaste": true,
 	"editor.bracketPairColorization.enabled": true,
 	"editor.cursorBlinking": "expand",
 	"editor.cursorSmoothCaretAnimation": "on",
@@ -85,8 +88,17 @@
 	//#endregion
 
 	"dataWrangler.experiments.autoDetectCsvDelimiter": true,
+	"docker.extension.enableComposeLanguageServer": false,
 	"eslint.lintTask.enable": true,
 	"eslint.validate": ["javascript", "javascriptreact", "svelte"],
+	"github.copilot.enable": {
+		"*": false,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false
+	},
+	"gitlens.ai.model": "vscode",
+	"gitlens.ai.vscode.model": "copilot:gpt-4.1",
 	"increment-selection.topToBottom": true,
 	"livePreview.notifyOnOpenLooseFile": false,
 	"prettier.useTabs": true,

@@ -73,6 +73,7 @@
 	"security.workspace.trust.untrustedFiles": "open",
 	"terminal.integrated.defaultProfile.windows": "Nushell",
 	"terminal.integrated.fontFamily": "MesloLGM Nerd Font Mono",
+	"terminal.integrated.suggest.enabled": false,
 	"workbench.colorTheme": "Bluloco Dark Italic",
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.list.smoothScrolling": true,

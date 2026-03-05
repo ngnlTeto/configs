@@ -1,0 +1,296 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+	{
+		"key": "ctrl+k ctrl+k",
+		"command": "-editor.action.defineKeybinding",
+		"when": "editorTextFocus && !editorReadonly && editorLangId == 'jsonc'"
+	},
+	{
+		"key": "ctrl+k ctrl+k",
+		"command": "-editor.action.selectFromAnchorToCursor",
+		"when": "editorTextFocus && selectionAnchorSet"
+	},
+	{
+		"key": "ctrl+alt+k",
+		"command": "bookmarks.toggle",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+alt+k",
+		"command": "-bookmarks.toggle",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+m",
+		"command": "workbench.action.editor.changeLanguageMode",
+		"when": "!notebookEditorFocused"
+	},
+	{
+		"key": "ctrl+u ctrl+u",
+		"command": "editor.action.transformToUppercase"
+	},
+	{
+		"key": "ctrl+t",
+		"command": "-workbench.action.showAllSymbols"
+	},
+	{
+		"key": "shift shift",
+		"command": "workbench.action.showCommands"
+	},
+	{
+		"key": "ctrl+r ctrl+r",
+		"command": "editor.action.rename",
+		"when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "f2",
+		"command": "-editor.action.rename",
+		"when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+k ctrl+k",
+		"command": "editor.action.commentLine",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+alt+right",
+		"command": "-workbench.action.moveEditorToNextGroup"
+	},
+	{
+		"key": "ctrl+y ctrl+y",
+		"command": "markdowntable.nextCell",
+		"when": "editorTextFocus && markdowntable.contextkey.selection.InMarkdownTable && !editorReadonly && !editorTabMovesFocus && !inSnippetMode && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible && editorLangId == 'markdown'"
+	},
+	{
+		"key": "tab",
+		"command": "-markdowntable.nextCell",
+		"when": "editorTextFocus && markdowntable.contextkey.selection.InMarkdownTable && !editorReadonly && !editorTabMovesFocus && !inSnippetMode && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible && editorLangId == 'markdown'"
+	},
+	{
+		"key": "ctrl+q",
+		"command": "-workbench.action.quickOpenNavigateNextInViewPicker",
+		"when": "inQuickOpen && inViewsPicker"
+	},
+	{
+		"key": "ctrl+q",
+		"command": "-workbench.action.quickOpenView"
+	},
+	{
+		"key": "ctrl+q",
+		"command": "editor.action.formatDocument",
+		"when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+	},
+	{
+		"key": "shift+alt+f",
+		"command": "-editor.action.formatDocument",
+		"when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+	},
+	{
+		"key": "ctrl+shift+q",
+		"command": "-workbench.action.quickOpenNavigatePreviousInViewPicker",
+		"when": "inQuickOpen && inViewsPicker"
+	},
+	{
+		"key": "ctrl+shift+q",
+		"command": "-sqlite.runDocumentQuery",
+		"when": "editorLangId =~ /(sql|sqlite)/"
+	},
+	{
+		"key": "alt+q",
+		"command": "eslint.executeAutofix"
+	},
+	{
+		"key": "ctrl+alt+space",
+		"command": "workbench.action.toggleAuxiliaryBar"
+	},
+	{
+		"key": "shift+f9",
+		"command": "-editor.debug.action.toggleInlineBreakpoint",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+l ctrl+l",
+		"command": "editor.action.transformToLowercase"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "-expandLineSelection",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+shift+4",
+		"command": "extension.incrementSelection",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+alt+i",
+		"command": "-extension.incrementSelection",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+3",
+		"command": "extension.randomIntCustomRange"
+	},
+	{
+		"key": "ctrl+l ctrl+l",
+		"command": "-expandLineSelection",
+		"when": "textInputFocus && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$|^pweave$/"
+	},
+	{
+		"key": "ctrl+alt+s",
+		"command": "workbench.action.files.saveWithoutFormatting"
+	},
+	{
+		"key": "ctrl+k ctrl+shift+s",
+		"command": "-workbench.action.files.saveWithoutFormatting"
+	},
+	{
+		"key": "ctrl+shift+s",
+		"command": "-workbench.action.files.saveLocalFile",
+		"when": "remoteFileDialogVisible"
+	},
+	{
+		"key": "ctrl+shift+alt+s",
+		"command": "workbench.action.files.saveFiles"
+	},
+	{
+		"key": "ctrl+k ctrl+o",
+		"command": "editor.unfoldAll",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+k ctrl+j",
+		"command": "-editor.unfoldAll",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+o ctrl+k",
+		"command": "editor.foldAll",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+k ctrl+0",
+		"command": "-editor.foldAll",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+m",
+		"command": "-editor.action.toggleTabFocusMode"
+	},
+	{
+		"key": "ctrl+k ctrl+o",
+		"command": "-workbench.action.files.openFolder",
+		"when": "openFolderWorkspaceSupport"
+	},
+	{
+		"key": "ctrl+k ctrl+o",
+		"command": "-workbench.action.files.openLocalFolder",
+		"when": "remoteFileDialogVisible"
+	},
+	{
+		"key": "ctrl+shift+t",
+		"command": "-reflow.createTask"
+	},
+	{
+		"key": "ctrl+shift+d",
+		"command": "-workbench.view.debug",
+		"when": "viewContainer.workbench.view.debug.enabled"
+	},
+	{
+		"key": "ctrl+shift+d",
+		"command": "editor.action.selectHighlights",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+shift+l",
+		"command": "-editor.action.selectHighlights",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+alt+w",
+		"command": "editor.debug.action.selectionToWatch"
+	},
+	{
+		"key": "ctrl+t",
+		"command": "workbench.action.tasks.runTask"
+	},
+	{
+		"key": "ctrl+r",
+		"command": "-workbench.action.openRecent"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-editor.action.goToTopHover",
+		"when": "editorHoverFocused"
+	},
+	{
+		"key": "ctrl+alt+k",
+		"command": "-code-runner.runCustomCommand"
+	},
+	{
+		"key": "ctrl+alt+j",
+		"command": "-liveshare.join",
+		"when": "liveshare:state != 'Joined' && liveshare:state != 'Shared'"
+	},
+	{
+		"key": "ctrl+alt+j",
+		"command": "-code-runner.runByLanguage"
+	},
+	{
+		"key": "alt+u",
+		"command": "workbench.action.holdLockedScrolling"
+	},
+	{
+		"key": "ctrl+shift+g",
+		"command": "-workbench.action.terminal.openDetectedLink",
+		"when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal'"
+	},
+	{
+		"key": "ctrl+k ctrl+w",
+		"command": "-workbench.action.closeAllEditors"
+	},
+	{
+		"key": "ctrl+shift+j",
+		"command": "-rust-analyzer.joinLines",
+		"when": "editorTextFocus && editorLangId == 'rust'"
+	},
+	{
+		"key": "ctrl+shift+j",
+		"command": "-workbench.action.search.toggleQueryDetails",
+		"when": "inSearchEditor || searchViewletFocus"
+	},
+	{
+		"key": "shift+f9",
+		"command": "-settings.action.showContextMenu",
+		"when": "inSettingsEditor"
+	},
+	{
+		"key": "shift+f9",
+		"command": "sortLines.sortLines",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "f9",
+		"command": "-sortLines.sortLines",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "-workbench.action.chat.newChat",
+		"when": "chatIsEnabled && inChat && chatLocation == 'panel'"
+	},
+	{
+		"key": "ctrl+l ctrl+l",
+		"command": "-expandLineSelection",
+		"when": "textInputFocus && editorLangId =~ /^latex$|^context$|^latex-expl3$|^doctex$|^rsweave$|^jlweave$|^pweave$/"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "-workbench.action.browser.focusUrlInput",
+		"when": "activeEditor == 'workbench.editor.browser'"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "expandLineSelection"
+	}
+]
